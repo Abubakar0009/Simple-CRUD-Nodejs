@@ -39,7 +39,7 @@ app.get('/delete/:id', async (req, res) => {
 
 app.get('/edit/:userid', async (req, res) => {
     
- let user = await userModel.findOne({_id:req.params.usericld})
+ let user = await userModel.findOne({_id:req.params.userid})
  res.render('edit', {user})
 });
 
